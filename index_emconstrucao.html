@@ -3,181 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WFI Tech - Consultoria em TI</title>
+    <title>WFI Tech - Em Construção</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
-            background: #0f172a;
+            background: #2563eb; /* Inspirado na cor azul da logo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             color: #ffffff;
-            line-height: 1.6;
         }
 
-        header {
-            padding: 20px;
+        .container {
             text-align: center;
-            background: #1e293b;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #38bdf8;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #38bdf8;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #f43f5e;
-        }
-
-        section {
+            background: #1e40af; /* Tom escuro inspirado na logo */
             padding: 50px;
-            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
         }
 
-        .section-title {
-            font-size: 2.5rem;
-            color: #38bdf8;
-            margin-bottom: 20px;
-        }
-
-        .packages {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .package {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .package h3 {
-            font-size: 1.8rem;
-            color: #38bdf8;
+        h1 {
+            font-size: 2.8rem;
+            color: #60a5fa; /* Azul mais claro inspirado na logo */
             margin-bottom: 10px;
         }
 
-        .package p {
-            color: #cbd5e1;
-        }
-
-        .cta-section {
-            background: #1e293b;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            color: #38bdf8;
-            font-size: 2.2rem;
-        }
-
-        .cta-section a {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #38bdf8;
-            color: #1e293b;
-            text-decoration: none;
+        p {
             font-size: 1.2rem;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            color: #e0f2fe; /* Cor suave inspirada na logo */
         }
 
-        .cta-section a:hover {
-            background-color: #f43f5e;
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
         }
 
-        footer {
-            padding: 20px;
-            background: #0f172a;
-            text-align: center;
-            color: #94a3b8;
+        .loading-animation {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #93c5fd;
+            border-top: 8px solid #60a5fa;
+            border-radius: 50%;
+            animation: spin 1.5s linear infinite;
+            margin: 20px auto;
         }
 
-        .footer-links a {
-            color: #38bdf8;
-            text-decoration: none;
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .social-links a {
             margin: 0 10px;
+            text-decoration: none;
+            color: #60a5fa;
+            font-size: 1.5rem;
+            transition: color 0.3s;
         }
 
-        .footer-links a:hover {
+        .social-links a:hover {
             color: #f43f5e;
         }
 
-        .package p br {
-            display: none;
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #60a5fa;
+            color: #1e293b;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #f43f5e;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>WFI Tech - Soluções de TI Personalizadas</h1>
-        <nav>
-            <a href="#services">Pacotes</a>
-            <a href="#about">Sobre Nós</a>
-            <a href="#contact">Contato</a>
-        </nav>
-    </header>
+    <div class="container">
+        <img src="/mnt/data/img/logo1azulclaro.png" alt="WFI Tech Logo" class="logo">
+        <h1>Nosso site está em construção</h1>
+        <p>Estamos trabalhando para oferecer soluções inovadoras e personalizadas em consultoria de TI.</p>
 
-    <section id="services">
-        <h2 class="section-title">Nossos Pacotes de Serviços</h2>
-        <div class="packages">
-            <div class="package">
-                <h3>Pacote de Suporte</h3>
-                <p><strong>Preço:</strong> R$ 2.000,00/mês</p>
-                <p>Suporte técnico e manutenção preventiva em tempo real.</p>
-            </div>
-            <div class="package">
-                <h3>Pacote de Infraestrutura</h3>
-                <p><strong>Preço:</strong> Sob análise de necessidade</p>
-                <p>Gestão de servidores, redes e segurança conforme demandas específicas.</p>
-            </div>
-            <div class="package">
-                <h3>Pacote de Desenvolvimento</h3>
-                <p><strong>Preço:</strong> Sob análise de projeto</p>
-                <p>Desenvolvimento de novos sistemas ou otimização de existentes.</p>
-            </div>
-            <div class="package">
-                <h3>Pacote Completo</h3>
-                <p><strong>Preço:</strong> A combinar</p>
-                <p>Inclui suporte, infraestrutura e desenvolvimento integrado.</p>
-            </div>
-        </div>
-    </section>
+        <div class="loading-animation"></div>
 
-    <section id="about">
-        <h2 class="section-title">Sobre a WFI Tech</h2>
-        <p>A WFI Tech é uma empresa de tecnologia focada em oferecer soluções modernas e personalizadas. Com uma equipe qualificada, ajudamos empresas a impulsionar sua transformação digital e proteger seus dados.</p>
-    </section>
+        <a class="button" href="mailto:william.sousa@wfitech.com.br">Entre em contato</a>
 
-    <section id="contact" class="cta-section">
-        <h2>Entre em contato para uma solução personalizada</h2>
-        <a href="mailto:contato@wfitech.com">Fale Conosco</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 WFI Tech. Soluções inteligentes para o futuro.</p>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/company/wfitech" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/wfitech" target="_blank">Twitter</a>
+        <p>Conecte-se conosco nas redes sociais:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/wfi-tech" target="_blank">LinkedIn</a>
             <a href="https://www.instagram.com/wfitech" target="_blank">Instagram</a>
         </div>
-    </footer>
+
+        <div class="footer">
+            &copy; 2025 WFI Tech. Soluções inteligentes para o futuro.
+        </div>
+    </div>
 </body>
 </html>
