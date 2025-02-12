@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GR27LNMJBL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GR27LNMJBL');
+</script>
+
+
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -8,8 +22,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="WFI Tech - Tecnologia para seu negócio">
-<meta property="og:description" content="Conheça a WFI Tech e nossas soluções em tecnologia.">
-<meta property="og:url" content="https://wfitech.com.br">
+    <meta property="og:description" content="Conheça a WFI Tech e nossas soluções em tecnologia.">
+    <meta property="og:url" content="https://wfitech.com.br">
+    <meta name="description" content="A WFI Tech oferece consultoria, suporte e soluções em TI para empresas. Conte conosco para modernizar sua infraestrutura e desenvolvimento de sistemas.">
+
+
+
 
 
     <title>WFI Tech - Consultoria em TI</title>
@@ -30,7 +48,13 @@
             text-align: center;
             background: rgba(0,74,173,255);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            scroll-behavior: smooth;
+            
         }
+        html {
+            scroll-behavior: smooth;
+        }
+        
 
         header img {
             width: 200px;
@@ -147,15 +171,102 @@
             border-radius: 8px;
         }
         
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input, textarea {
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+        
+        button {
+            background: #004aad;
+            color: white;
+            padding: 12px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            background: #a7d110;
+        }
+
+        #testimonials {
+            text-align: center;
+            padding: 60px 10%;
+            background: rgba(30, 64, 175, 0.9);
+            color: #fff;
+        }
+        
+        .testimonial-container {
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial {
+            display: none;
+            font-size: 1.2rem;
+            padding: 20px;
+            border-radius: 10px;
+            background: #11283b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: fade 1s ease-in-out;
+        }
+        
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #a7d110;
+        }
+        
+        /* Efeito de fade para transição suave */
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        
     </style>
 </head>
 <body>
     <header>
         <img src="mnt/data/img/logo1azulclaro.png" alt="WFI Tech Logo">
+        
         <nav>
             <a href="#services">Pacotes</a>
             <a href="#about">Sobre Nós</a>
             <a href="#contact">Contato</a>
+            <p>
+
+            <a href="https://www.linkedin.com/company/wfi-tech" target="_blank" style="text-decoration: none; color: inherit;">
+                <i class="fa-brands fa-linkedin" style="color: #f7f7f7; font-size: 20px;"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/wfitech" target="_blank" style="text-decoration: none; color: inherit;">
+                <i class="fa-brands fa-instagram" style="color: #f7f7f7; font-size: 20px;"></i>
+            </a>
+
+            <a href="https://wa.me/5561992429319" target="_blank" style="text-decoration: none; color: inherit;">
+                <i class="fa-brands fa-whatsapp" style="color: #f7f7f7; font-size: 20px;"></i>
+            </a>
         </nav>
     </header>
 
@@ -166,37 +277,106 @@
                 <img src="mnt/data/img/empresa-de-suporte-de-ti.jpg" alt="Consultoria e Suporte" width="100%">
                 <h3>Pacote de Suporte</h3>
                 <p><strong>Preço:</strong> R$ 2.000,00/mês</p>
-                <p>Suporte técnico e manutenção preventiva em tempo real.</p>
+                <p>Resolvemos problemas de TI em tempo real, mantendo seus sistemas sempre ativos.</p>
             </div>
             <div class="package">
                 <img src="mnt/data/img/infraestrtutura-de-rede-900x506.jpg" alt="Infraestrutura de Redes" width="100%">
                 <h3>Pacote de Infraestrutura</h3>
                 <p><strong>Preço:</strong> Sob análise </p>
-                <p>Gestão de servidores, redes e segurança conforme demandas específicas.</p>
+                <p>Gerenciamos redes, servidores e segurança com soluções sob medida para seu negócio.</p>
             </div>
             <div class="package">
                 <img src="mnt/data/img/dev sistemas.png" alt="dev sistemas" width="100%">
                 <h3>Pacote de Desenvolvimento</h3>
                 <p><strong>Preço:</strong> Sob análise </p>
-                <p>Gestão de servidores, redes e segurança conforme demandas específicas.</p>
+                <p>Sistemas personalizados para otimizar processos e impulsionar o crescimento da sua empresa.</p>
             </div>
             <div class="package">
                 <h3>Pacote Completo</h3>
                 <p><strong>Preço:</strong> A combinar</p>
                 <p>Inclui suporte, infraestrutura e desenvolvimento integrado.</p>
+                <p>Uma solução completa de TI para empresas que querem segurança, suporte e inovação.</p>
             </div>
         </div> <!-- FECHA A DIV .packages -->
     </section>
+
+    <section id="testimonials">
+        <h2 class="section-title">O que nossos clientes dizem</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"A WFI Tech transformou nossa infraestrutura de TI. Atendimento impecável!"</p>
+                <strong>— Thiago Silva, CEO</strong>
+            </div>
+            <div class="testimonial">
+                <p>"O suporte da WFI Tech é excelente, sempre prontos para resolver qualquer problema."</p>
+                <strong>— Matheus Nunes, Diretor de TI</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Soluções inovadoras e atendimento excepcional. Recomendo para qualquer empresa!"</p>
+                <strong>— Rodrigo Praser, Gerente de Projetos</strong>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll(".testimonial");
+    
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? "block" : "none";
+            });
+        }
+    
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+    
+        // Exibir o primeiro depoimento ao carregar a página
+        showTestimonial(currentTestimonial);
+    
+        // Alternar os depoimentos automaticamente a cada 5 segundos
+        setInterval(nextTestimonial, 5000);
+    </script>
+    
     
     <section id="about">
         <h2 class="section-title">Sobre a WFI Tech</h2>
-        <p><h3>A WFI Tech é uma empresa de tecnologia especializada em soluções inovadoras e personalizadas.<br> Com uma equipe altamente qualificada, ajudamos sua empresa a crescer com segurança, eficiência e transformação digital, garantindo a proteção dos seus dados e a otimização dos seus processos.</h3>
+        <p><h3>Na WFI Tech, acreditamos que a tecnologia pode transformar negócios. Nossa equipe experiente entrega soluções inovadoras para proteger dados, automatizar processos e garantir que sua empresa opere com máxima eficiência. <br><p>Seja para suporte, infraestrutura ou desenvolvimento, estamos aqui para levar seu negócio ao próximo nível.</h3>
     </section>
+
+
+    
+    
 
     <section id="contact" class="cta-section">
         <h2>Entre em contato para uma solução personalizada</h2>
-        <a class="cta-button" href="https://wa.me/5561992429319">Fale Conosco</a>
+        <form action="mailto:william.sousa@wfitech.com.br" method="POST" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
+
+
+    
+
+    <section id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+            <summary>Quais serviços a WFI Tech oferece?</summary>
+            <p>Oferecemos suporte de TI, infraestrutura e desenvolvimento de sistemas personalizados.</p>
+        </details>
+        <details>
+            <summary>Como funciona o suporte remoto?</summary>
+            <p>Nosso time de especialistas acessa seu sistema de forma segura e resolve os problemas rapidamente.</p>
+        </details>
+    </section>
+    
+    
+    
 
     <footer>
         <p>&copy; 2025 WFI Tech. Soluções inteligentes para o futuro.</p>
@@ -208,8 +388,15 @@
             <a href="https://www.instagram.com/wfitech" target="_blank" style="text-decoration: none; color: inherit;">
                 <i class="fa-brands fa-instagram" style="color: #f7f7f7; font-size: 20px;"></i> Instagram
             </a>
+
+            <a href="https://wa.me/5561992429319" target="_blank" style="text-decoration: none; color: inherit;">
+                <i class="fa-brands fa-whatsapp" style="color: #f7f7f7; font-size: 20px;"></i> Whatsapp
+            </a>
             
         </div>
     </footer>
+
+
+
 </body>
 </html>
